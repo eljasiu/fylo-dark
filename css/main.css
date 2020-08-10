@@ -1,0 +1,558 @@
+:root{
+  --bg-main: hsl(218, 28%, 13%);
+  --bg-secondary: hsl(217, 28%, 15%);
+  --gradient-blue: linear-gradient(hsl(176, 68%, 64%), hsl(198, 60%, 50%));
+  --white: hsl(0, 0%, 100%);
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  background-color: var(--bg-main);
+  font-family: 'Open Sans', sans-serif;
+  color: var(--white);
+  font-size: 0.875rem;
+
+  overflow-x: hidden !important;
+}
+
+.wrapper{
+  width: 85%;
+  margin: 0 auto;
+}
+
+.img-container img{
+  width: 100%;
+}
+
+.button-primary{
+  display: block;
+  border: none;
+  padding: 1rem 5.5rem;
+  border-radius: 30px;
+  background-image: var(--gradient-blue);
+  opacity: .9;
+  color: var(--white);
+  font-weight: 700;
+  font-family: 'Raleway', sans-serif;
+  transition: 300ms all ease;
+}
+
+.button-primary:hover{
+  opacity: 0.7;
+}
+
+.button-secondary{
+  display: flex;
+  border: none;
+  padding: 0.2rem 0;
+  background-color: rgba(0,0,0,0);
+  opacity: 0.7;
+  border-bottom: 1px solid hsl(176, 68%, 64%);
+  color: hsl(176, 68%, 64%);
+  font-family: 'Raleway', sans-serif;
+  transition: all 300ms ease;
+}
+
+.button-secondary:hover{
+  transform: translateX(5px);
+}
+
+.button-secondary img{
+  margin-left: 0.5rem;
+}
+
+button:hover{
+  cursor: pointer;
+}
+
+ul{
+  list-style-type: none;
+}
+
+a{
+  text-decoration: none;
+  color: var(--white);
+}
+
+header{
+  padding: 2.5rem 0 1.5rem;
+  background-color: var(--bg-secondary);
+}
+
+header .wrapper{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header li{
+  display: inline-block;
+  transition: 300ms all ease;
+}
+
+header a{
+  padding: 0.5rem 1rem;
+  opacity: 0.7;
+  font-family: 'Raleway', sans-serif;
+}
+
+header li:hover{
+  opacity: 0.7;
+}
+
+header li:last-child a{
+  padding-right: 0;
+}
+
+#hero{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  padding-bottom: 10rem;
+
+  background-color: var(--bg-secondary);
+  background-image: url('../images/bg-curvy-desktop.svg');
+  background-position: bottom;
+  background-position: center 110%;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+#hero .img-container{
+  width: 45%
+}
+
+#hero .text-content{
+  width: 45%;
+  text-align: center;
+}
+
+#hero h1{
+  font-family: 'Raleway', sans-serif;
+  padding: 2rem 0;
+  font-size: 2rem;
+  line-height: 3rem;
+}
+
+#hero h1 span{
+  display: block;
+}
+
+#hero p{
+  width: 75%;
+  margin: 0 auto;
+  font-size: 1rem;
+  line-height: 1.6rem;
+  opacity: 0.7;
+}
+
+#hero .button-primary{
+  margin-top: 2rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#features .wrapper{
+  width: 60%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: stretch;
+  column-gap: 10rem;
+  row-gap: 5rem;
+}
+
+#features .feature{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  text-align: center;
+}
+
+#features .feature img{
+  align-self: center;
+  margin-bottom: auto;
+}
+
+#features h2{
+  font-family: 'Raleway', sans-serif;
+  padding: 1.2rem 0;
+}
+
+#features p{
+  opacity: 0.7;
+}
+
+#showcase{
+  padding: 7rem 0;
+}
+
+#showcase .wrapper{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#showcase .img-container{
+  width: 45%;
+}
+
+#showcase .text-content{
+  width: 45%;
+}
+
+#showcase h2{
+  font-family: 'Raleway', sans-serif;
+  font-size: 1.8rem;
+}
+
+#showcase h2 span{
+  display: block;
+}
+
+#showcase p{
+  padding-top: 1.2rem;
+  padding-right: 1rem;
+  opacity: 0.7;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+#showcase .button-secondary{
+  margin-top: 1.2rem;
+}
+
+#testimonials{
+  padding: 5rem 0;
+}
+
+#testimonials .wrapper{
+  display: flex;
+  justify-content: space-between;
+}
+
+#testimonials .testimonial{
+  width: 30%;
+  padding: 3rem 1.5rem 1.5rem;
+  background-color: hsl(219, 30%, 18%);
+  border-radius: 5px;
+}
+
+#testimonials p{
+  opacity: 0.7;
+}
+
+#testimonials .profile{
+  display: flex;
+  align-items: center;
+  margin-top: 1.5rem;
+}
+
+#testimonials img{
+  width: 30px;
+  height: auto;
+  border-radius: 50%;
+  margin-right: 0.5rem;
+}
+
+#testimonials h3{
+  font-size: 0.7rem;
+}
+
+#testimonials h4{
+  font-size: 0.6rem;
+  opacity: 0.7;
+  font-weight: 400;
+  letter-spacing: 1px;
+}
+
+#testimonials .testimonial:first-child{
+  position: relative;
+}
+
+#testimonials .testimonial:first-child::before{
+  content: '';
+  display: block;
+  position: absolute;
+  width: 55px;
+  height: 45px;
+  top: -45px;
+  left: -10px;
+  background-image: url('../images/bg-quotes.png');
+}
+
+#get-access{
+  width: 60%;
+  margin: 0 auto;
+  padding: 2rem 5rem;
+  background-color: var(--bg-secondary);
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 5px 5px 5px #111;
+
+  transform: translateY(100px);
+}
+
+#get-access h2{
+  font-family: 'Raleway', sans-serif;
+  font-size: 1.9rem;
+}
+
+#get-access p{
+  padding: 1.5rem 0.7rem;
+  line-height: 1.5;
+  opacity: 0.7;
+}
+
+#get-access form{
+  display: flex;
+  justify-content: space-between;
+}
+
+#get-access input{
+  width: 65%;
+  border-radius: 30px;
+  border: none;
+  padding: 1rem;
+}
+
+#get-access .button-primary{
+  width: 30%;
+  padding: 1rem 0;
+}
+
+footer{
+  padding-top:10rem;
+  padding-bottom: 3rem;
+  padding-left: 2rem;
+  background-color: hsl(216, 53%, 9%);
+}
+
+footer .wrapper{
+  width: 92%;
+}
+
+footer .grid-container{
+  display: grid;
+  grid-template-columns: 2.5fr 1.2fr 0.8fr;
+  column-gap: 3rem;
+  margin-top: 4rem;
+}
+
+footer .info ul{
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  align-items: start;
+  column-gap: 3rem;
+  row-gap: 1rem;
+}
+
+footer .info li{
+  display: flex;
+}
+
+footer .info p{
+  text-align: left;
+  margin-left: 0.7rem;
+}
+
+footer .info ul li:first-child{
+  grid-row: 1/3;
+
+}
+
+footer .links ul{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 2rem;
+}
+
+footer .links li{
+  padding-bottom: 0.7rem;
+}
+
+footer .links li:hover{
+  cursor: pointer;
+}
+
+footer .socials{
+  color: #fff;
+}
+
+footer .socials i{
+  display: inline-block;
+  margin: 0 0.2rem;
+  padding: 0.2rem;
+  border-radius: 50%;
+  border: 1px solid #fff;
+  transition: all 300ms ease;
+}
+
+footer .socials i:hover{
+  background-color: #fff;
+  color: hsl(216, 53%, 9%);
+  cursor: pointer;
+}
+
+@media (max-width: 850px) {
+  header .logo{
+    width: 82px;
+  }
+
+  header a{
+    padding: 0.5rem 0.4rem;
+  }
+
+  #hero{
+    background-position: center bottom;
+    padding-bottom: 2rem;
+  }
+
+  #hero .img-container{
+    width: 85%;
+  }
+
+  #hero .text-content{
+    width: 85%;
+  }
+
+  #hero h1{
+    font-size: 1.8rem;
+    line-height: 2.5rem;
+  }
+
+  #hero h1 span{
+    display: inline;
+  }
+
+  #hero p{
+    width: 100%;
+  }
+
+  #features .wrapper{
+    width: 90%;
+    display: block;
+  }
+
+  #features .feature{
+    margin: 5rem 0;
+  }
+
+  #features h2{
+    font-size: 1.2rem;
+  }
+
+  #showcase{
+    padding-top: 2rem;
+  }
+
+  #showcase .wrapper{
+    width: 90%;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  #showcase .img-container{
+    width: 100%;
+  }
+
+  #showcase .text-content{
+    width: 100%;
+  }
+
+  #showcase h2{
+    margin-top: 2rem;
+    font-size: 1.2rem;
+  }
+
+  #showcase h2 span{
+    display: inline;
+  }
+
+  #showcase p{
+    padding: 1rem 0;
+  }
+
+  #testimonials{
+    padding-bottom: 0;
+  }
+
+  #testimonials .wrapper{
+    width: 90%;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #testimonials .testimonial{
+    width: 90%;
+    margin: 1rem 0;
+    padding: 2rem 1rem;
+    font-size: 0.75rem;
+  }
+
+  #get-access{
+    width: 90%;
+    padding: 4rem 2rem;
+  }
+
+  #get-access h2{
+    font-size: 1.2rem;
+  }
+
+  #get-access p{
+    padding: 1rem 0;
+  }
+
+  #get-access form{
+    flex-direction: column;
+  }
+
+  #get-access input{
+    width: 100%;
+    margin: 1rem 0;
+  }
+
+  #get-access .button-primary{
+    width: 100%;
+  }
+
+  footer .grid-container{
+    display: block;
+  }
+
+  footer .info ul{
+    display: block;
+  }
+
+  footer .info li{
+    padding: 0.7rem 0;
+  }
+
+  footer .links{
+    margin-top: 2rem;
+  }
+
+  footer .links ul{
+    display: block;
+  }
+
+  footer .links li:nth-child(5){
+    margin-top: 2rem;
+  }
+
+  footer .socials{
+    padding-top: 3rem;
+    text-align: center;
+  }
+}
+
+@media (max-width: 320px) {
+  body{
+    font-size: 0.75rem;
+  }
+}
