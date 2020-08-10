@@ -409,8 +409,12 @@ footer .socials i:hover{
   }
 
   #hero{
+    background-image: url('../images/bg-curvy-mobile.svg');
+    background-position: bottom;
     background-position: center bottom;
-    padding-bottom: 2rem;
+    background-repeat: no-repeat;
+    background-size: contain;
+    padding-bottom: 0rem;
   }
 
   #hero .img-container{
@@ -432,6 +436,10 @@ footer .socials i:hover{
 
   #hero p{
     width: 100%;
+  }
+
+  #features{
+    padding-top: 2rem;
   }
 
   #features .wrapper{
@@ -458,7 +466,7 @@ footer .socials i:hover{
   }
 
   #showcase .img-container{
-    width: 100%;
+    width: 70%;
   }
 
   #showcase .text-content{
